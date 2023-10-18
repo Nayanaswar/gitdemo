@@ -12,5 +12,6 @@ public class TC2 {
  
  //get
  //set
+ //Aswar//
 
 }
