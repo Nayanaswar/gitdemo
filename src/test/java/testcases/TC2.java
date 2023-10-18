@@ -11,5 +11,6 @@ public class TC2 {
  int a;
  
  //get
+ //set
 
 }
