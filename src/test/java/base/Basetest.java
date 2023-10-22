@@ -22,7 +22,7 @@ public class Basetest
 	public static FileReader fr1;
 	
 	@BeforeTest
-	public void setup() throws IOException 
+	public void setup() throws IOException, InterruptedException 
 	{
 		if(driver==null) 
 		{
@@ -38,6 +38,8 @@ public class Basetest
 			WebDriverManager.chromedriver().setup();
 			driver=new ChromeDriver();
 			driver.get(pr.getProperty("testURL"));
+			driver.manage().window().maximize();
+			Thread.sleep(10000);
 		}
 		
 		else if (pr.getProperty("browser").equalsIgnoreCase("Edge")) 
@@ -45,6 +47,7 @@ public class Basetest
 			WebDriverManager.edgedriver().setup();
 			driver=new EdgeDriver();
 			driver.get(pr.getProperty("testURL"));
+			driver.manage().window().maximize();
 		}
 		
 		else if (pr.getProperty("browser").equalsIgnoreCase("firefox")) 
@@ -52,6 +55,7 @@ public class Basetest
 			WebDriverManager.firefoxdriver().setup();
 			driver=new FirefoxDriver();
 			driver.get(pr.getProperty("testURL"));
+			driver.manage().window().maximize();
 		}
 	}
 	

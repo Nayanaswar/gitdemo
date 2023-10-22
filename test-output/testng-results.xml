@@ -2,51 +2,27 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-13T15:21:58 IST" name="Default suite" finished-at="2023-10-13T15:22:10 IST" duration-ms="12616">
+  <suite started-at="2023-10-19T15:18:59 IST" name="Default suite" finished-at="2023-10-19T15:19:20 IST" duration-ms="21336">
     <groups>
     </groups>
-    <test started-at="2023-10-13T15:21:58 IST" name="Default test" finished-at="2023-10-13T15:22:10 IST" duration-ms="12616">
+    <test started-at="2023-10-19T15:18:59 IST" name="Default test" finished-at="2023-10-19T15:19:20 IST" duration-ms="21336">
       <class name="testcases.MyFirstTC">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.MyFirstTC@5340477f]" started-at="2023-10-13T15:21:58 IST" name="setup" finished-at="2023-10-13T15:22:08 IST" duration-ms="10753" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.MyFirstTC@28cda624]" started-at="2023-10-19T15:18:59 IST" name="setup" finished-at="2023-10-19T15:19:20 IST" duration-ms="20360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="ClickOnElements()[pri:1, instance:testcases.MyFirstTC@5340477f]" started-at="2023-10-13T15:22:08 IST" name="ClickOnElements" finished-at="2023-10-13T15:22:10 IST" duration-ms="1252" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="EnterDetails()[pri:1, instance:testcases.MyFirstTC@28cda624]" started-at="2023-10-19T15:19:20 IST" name="EnterDetails" finished-at="2023-10-19T15:19:20 IST" duration-ms="323" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
             <message>
-              <![CDATA[element click intercepted: Element <div class="card-body">...</div> is not clickable at point (108, 415). Other element would receive the click: <div id="adplus-anchor" data-google-query-id="CPaR0Irh8oEDFTGQ5godvOgDqg">...</div>
-  (Session info: chrome=118.0.5993.70)
-Build info: version: '4.14.0', revision: 'e5a96349ce'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f2b70988497390bb962f2cd17b1e4da0, clickElement {id=78CB405B5C9587CCA62C3B52805A1B4F_element_24}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.70, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\nayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64505}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64505/devtoo..., se:cdpVersion: 118.0.5993.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (f2b70988497390bb962f2cd17b1e4da0)] -> xpath: (//div[@class='card-body'])[1]]
-Session ID: f2b70988497390bb962f2cd17b1e4da0]]>
+              <![CDATA[C:\Users\nayan\git\repository\PracticeUITesting\src\test\resources\testdata (Access is denied)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="card-body">...</div> is not clickable at point (108, 415). Other element would receive the click: <div id="adplus-anchor" data-google-query-id="CPaR0Irh8oEDFTGQ5godvOgDqg">...</div>
-  (Session info: chrome=118.0.5993.70)
-Build info: version: '4.14.0', revision: 'e5a96349ce'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f2b70988497390bb962f2cd17b1e4da0, clickElement {id=78CB405B5C9587CCA62C3B52805A1B4F_element_24}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.70, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\nayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64505}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64505/devtoo..., se:cdpVersion: 118.0.5993.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (f2b70988497390bb962f2cd17b1e4da0)] -> xpath: (//div[@class='card-body'])[1]]
-Session ID: f2b70988497390bb962f2cd17b1e4da0
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at testcases.MyFirstTC.ClickOnElements(MyFirstTC.java:17)
+              <![CDATA[java.io.FileNotFoundException: C:\Users\nayan\git\repository\PracticeUITesting\src\test\resources\testdata (Access is denied)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+at utilities.ReadXLSData.getdata(ReadXLSData.java:18)
+at testcases.MyFirstTC.EnterDetails(MyFirstTC.java:28)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -75,11 +51,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ClickOnElements -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:testcases.MyFirstTC@5340477f]" started-at="2023-10-13T15:22:10 IST" name="Teardown" finished-at="2023-10-13T15:22:10 IST" duration-ms="483" status="PASS">
+        </test-method> <!-- EnterDetails -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:testcases.MyFirstTC@28cda624]" started-at="2023-10-19T15:19:20 IST" name="Teardown" finished-at="2023-10-19T15:19:20 IST" duration-ms="568" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->

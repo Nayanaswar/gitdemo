@@ -1,20 +1,13 @@
 package testcases;
 
-public class TC2 {
+public class TC2 
+{
+	public void m1() 
+	{
+		System.out.println("This is m1 method");
+	}
 	
-	String Name="nayan";
 	
- String name1;
- 
- String naav;
- 
- int a;
- 
- //get
- //set
- //test//
-
-	//code conflictll
  
 
 }

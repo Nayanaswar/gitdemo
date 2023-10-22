@@ -5,8 +5,8 @@
     <classes>
       <class name="testcases.MyFirstTC">
         <methods>
+          <include name="EnterDetails"/>
           <include name="Teardown"/>
-          <include name="ClickOnElements"/>
           <include name="setup"/>
         </methods>
       </class> <!-- testcases.MyFirstTC -->
