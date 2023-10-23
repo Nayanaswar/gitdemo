@@ -13,6 +13,11 @@ public class TC2
 	{
 		System.out.println("This m2 method..............");
 	}
+	
+	public void m3 () 
+	{
+		System.out.println("this is m3 method");
+	}
  
 
 }
